@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>February Study Checklist</title>
+  <style>
+    :root {
+      --bg: #fff0f6;
+      --card: #ffffff;
+      --text: #222;
+      --accent: #c9184a;
+      --muted: #777;
+    }
+    body.dark {
+      --bg: #0f1115;
+      --card: #181b22;
+      --text: #eaeaf0;
+      --accent: #ff4d8d;
+      --muted: #aaa;
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: 0.3s;
+    }
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .top {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+    button {
+      background: var(--card);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .progress {
+      max-width: 1100px;
+      margin: 0 auto 20px;
+      background: var(--card);
+      border-radius: 10px;
+      padding: 8px 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .bar {
+      height: 8px;
+      background: #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .fill {
+      height: 100%;
+      width: 0%;
+      background: var(--accent);
+      transition: 0.3s;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .main { flex: 3; }
+    .maths {
+      flex: 1.2;
+      background: var(--card);
+      border-radius: 12px;
+      padding: 15px;
+      position: sticky;
+      top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .day {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 { color: var(--accent); margin-bottom: 8px; }
+    label {
+      display: block;
+      margin: 6px 0;
+      font-size: 14px;
+      color: var(--text);
+      cursor: pointer;
+    }
+    input { margin-right: 6px; }
+  </style>
+</head>
+<body><h1>💗 February Study Checklist 💗</h1><div class="top">
+  <button id="darkToggle">🌙 Dark mode</button>
+  <button id="doneToday">✔ Done for today</button>
+</div><div class="progress">
+  <small id="percent">0% completed</small>
+  <div class="bar"><div class="fill" id="fill"></div></div>
+</div><div class="container">  <div class="main">
+    <div class="day"><h2>Feb 2</h2>
+      <label><input type="checkbox" data-id="f2p"> Physics Test</label>
+      <label><input type="checkbox" data-id="f2a"> Chemistry: Atoms</label>
+      <label><input type="checkbox" data-id="f2df"> Chemistry: d & f Block</label>
+    </div>
+    <div class="day"><h2>Feb 3</h2>
+      <label><input type="checkbox" data-id="f3p"> Physics: Dual Nature</label>
+      <label><input type="checkbox" data-id="f3c"> Chemistry: Coordination</label>
+    </div>
+    <div class="day"><h2>Feb 4</h2>
+      <label><input type="checkbox" data-id="f4p"> Physics: Nuclei</label>
+      <label><input type="checkbox" data-id="f4c"> Chemistry: Amines</label>
+    </div>
+    <div class="day"><h2>Feb 5</h2>
+      <label><input type="checkbox" data-id="f5c"> Chemistry: Aldehydes & Ketones</label>
+    </div>
+    <div class="day"><h2>Feb 6</h2>
+      <label><input type="checkbox" data-id="f6c"> Chemistry: Biomolecules</label>
+      <label><input type="checkbox" data-id="f6p"> Physics: Wave Optics</label>
+    </div>
+    <div class="day"><h2>Feb 7</h2>
+      <label><input type="checkbox" data-id="f7p"> Physics: Ray Optics</label>
+      <label><input type="checkbox" data-id="f7c"> Chemistry: Alcohols & Phenols</label>
+    </div>
+    <div class="day"><h2>Feb 8</h2>
+      <label><input type="checkbox" data-id="f8c"> Chemistry: Haloalkanes</label>
+      <label><input type="checkbox" data-id="f8p"> Physics: EMI</label>
+    </div>
+    <div class="day"><h2>Feb 9</h2>
+      <label><input type="checkbox" data-id="f9p1"> Physics: Semiconductor</label>
+      <label><input type="checkbox" data-id="f9p2"> Physics: AC</label>
+      <label><input type="checkbox" data-id="f9c"> Chemistry: Electrochemistry</label>
+    </div>
+    <div class="day"><h2>Feb 10</h2>
+      <label><input type="checkbox" data-id="f10c"> Chemistry: Solutions</label>
+      <label><input type="checkbox" data-id="f10p"> Physics: Electric Charges</label>
+    </div>
+    <div class="day"><h2>Feb 11</h2>
+      <label><input type="checkbox" data-id="f11p"> Physics: Electric Potential</label>
+      <label><input type="checkbox" data-id="f11c"> Chemistry: Chemical Kinetics</label>
+    </div>
+    <div class="day"><h2>Feb 12</h2>
+      <label><input type="checkbox" data-id="f12p"> Physics: Magnetism (4 & 5)</label>
+    </div>
+    <div class="day"><h2>Feb 13</h2>
+      <label><input type="checkbox" data-id="f13p"> Physics: EMW</label>
+    </div>
+    <div class="day"><h2>Feb 14</h2>
+      <label><input type="checkbox" data-id="f14p"> Physics: Current Electricity</label>
+    </div>
+  </div>  <div class="maths">
+    <h2>📐 Maths</h2>
+    <label><input type="checkbox" data-id="m2"> Feb 2 – Relations & Functions</label>
+    <label><input type="checkbox" data-id="m3"> Feb 3 – Inverse Trig</label>
+    <label><input type="checkbox" data-id="m4"> Feb 4 – Matrices</label>
+    <label><input type="checkbox" data-id="m5"> Feb 5 – LPP</label>
+    <label><input type="checkbox" data-id="m6"> Feb 6 – Determinants</label>
+    <label><input type="checkbox" data-id="m7"> Feb 7 – Differentiation</label>
+    <label><input type="checkbox" data-id="m8"> Feb 8 – Integration</label>
+    <label><input type="checkbox" data-id="m9"> Feb 9 – AOI</label>
+    <label><input type="checkbox" data-id="m10"> Feb 10 – Diff Eq</label>
+    <label><input type="checkbox" data-id="m11"> Feb 11 – Vectors</label>
+    <label><input type="checkbox" data-id="m12"> Feb 12 – 3D Geometry</label>
+    <label><input type="checkbox" data-id="m13"> Feb 13 – Probability</label>
+  </div>
+</div><script>
+  const boxes = document.querySelectorAll('input[type="checkbox"]');
+  const fill = document.getElementById('fill');
+  const percent = document.getElementById('percent');
+  const darkToggle = document.getElementById('darkToggle');
+
+  function updateProgress() {
+    const total = boxes.length;
+    const checked = [...boxes].filter(b => b.checked).length;
+    const p = Math.round((checked / total) * 100);
+    fill.style.width = p + '%';
+    percent.textContent = p + '% completed';
+  }
+
+  boxes.forEach(b => {
+    const saved = localStorage.getItem(b.dataset.id);
+    b.checked = saved === 'true';
+    b.addEventListener('change', () => {
+      localStorage.setItem(b.dataset.id, b.checked);
+      updateProgress();
+    });
+  });
+
+  if (localStorage.getItem('dark') === 'true') document.body.classList.add('dark');
+
+  darkToggle.onclick = () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('dark', document.body.classList.contains('dark'));
+  };
+
+  document.getElementById('doneToday').onclick = () => {
+    alert('✨ So Proud of you Theoristprachi ✨');
+  };
+
+  updateProgress();
+</script></body>
+</html>
